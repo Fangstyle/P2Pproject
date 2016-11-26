@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <!--让IE使用最新的渲染引擎进行工作   例如content = "IE = 7" 就是使用IE7渲染 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--设置屏幕 适口， 宽度为设备的宽度  伸缩比例为1  主要是为了移动端的适配-->
+    <meta name="viewport" content="width=device-width, initial-scale=1，user-scalable=no">
+    <title>微金所</title>
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--根据css  ‘层叠’样式表 所以我们写的css 某些要覆盖 Bootstrap 中的样式 所以放到后面-->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!--引入标签，使小于IE9 的支持html5 标签  这个js放到head中（必须） 是为了body书写时 就可以支持html5标签-->
+    <!--根据网络下载 最好是把这个文件下载到你的项目中，有点懒不想下。。-->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- 引入jQery bootstarp 是基于jQuery 进行的开发 所以引入jQuery 必须在引入bootstrap js之前 -->
+<!--将所有js 写在body 之后目的是为了 在所有标签加载完以后进行js的执行-->
+<script src="js/jquery-1.8.2.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

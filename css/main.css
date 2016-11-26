@@ -1,0 +1,15 @@
+/*因为Bootstrap 一般支持的是西方字体 所以我们要指定我们中文字体*/
+ body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+/*设置字体图标*/
+@font-face {
+    font-family: 'Fanstyle';
+    src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'), url('../font/MiFie-Web-Font.svg') format('svg'), url('../font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.woff') format('woff');
+}
+/*统配选择器 根据元素的属性 查询标签  这里是class类名 以icon- 开头的*/
+[class^="icon-"],
+[class^=" icon-"]{
+    font-family: Fanstyle ;
+    font-style: normal;
+}
