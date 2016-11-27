@@ -28,6 +28,15 @@
 .icon-icon::before {
     content: "\e920";
 }
+.icon-uniE907:before {
+    content: "\e907";
+}
+.icon-uniE906:before {
+    content: "\e906";
+}
+.icon-uniE905:before {
+    content: "\e905";
+}
 /*头部*/
 #header> .topbar{
     border-bottom: 1px solid #C0C0C0;
@@ -88,6 +97,106 @@
 #main_ad>#carousel-example-generic>.carousel-inner>.item>img {
     width: 100%;
 }
+
+/*产品特色介绍开始*/
+#special{
+    padding: 50px 0;
+    border-bottom: 1px solid #c0c0c0;
+}
+#special > .container > .row > div{
+    margin: 20px 0;
+}
+#special .media a:hover{
+    text-decoration: none;
+}
+#special .media i{
+    font-size: 34px;
+}
+/*产品特色介绍结束*/
+
+
+
+/*立刻预定模块开始*/
+#order{
+    border-bottom: 1px solid #F0F0F0;
+}
+#order > .container > div{
+     line-height: 56px;
+ }
+#order > .container > div > span{
+    color:#E92322 ;
+}
+#order > .container > div > span >a{
+    color:#E92322 ;
+    border-bottom: 1px dashed #E92322;
+}
+/*立刻预定模块结束*/
+
+/*产品推荐模块开始*/
+#products {
+    padding: 40px 0;
+    background-color: #F0F0F0;
+}
+
+#products .tab-content .tabItem-left{
+    height: 150px;
+    margin-right: 120px;
+    background-color: #f30;
+}
+#products .tab-content .tabItem-right{
+    float: right;
+    width: 120px;
+    height: 150px;
+    background-color: #030;
+    position: relative;
+    border-left: 1px dashed #C0C0C0;
+}
+#products .tab-content .tabItem-right::before{
+    content: " ";
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #F0F0F0;
+    position:absolute;
+    top:-8px;
+    left:-8px;
+
+}
+#products .tab-content .tabItem-right::after{
+    content: " ";
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #F0F0F0;
+    position:absolute;
+    bottom:-8px;
+    left:-8px;
+
+}
+#products .tab-content .tabItem-left > .row{
+    margin: 0;
+}
+#products .Fanstyle-design-tabItem > .row > .col-xs-12{
+    margin: 20px 0;
+}
+#products .tab-content .tabItem-right > .tabItem-right-detail {
+    position: absolute;
+    top: 43px;
+    left: 38px;
+}
+#products .tab-content .actived{
+    background-color: #E92322;
+    color: #fff;
+}
+#products .tab-content .moved{
+      background-color: #fff;
+      color: #000;
+  }
+#products .tab-content .normaled{
+    background-color: #E0E0E0;
+    color: #000;
+}
+/*产品推荐模块结束*/
 /*bbg 按钮生成的代码 自定义按钮颜色*/
 .btn-fangstyle {
     color: #FFFFFF;
@@ -158,6 +267,7 @@ fieldset[disabled] .btn-fangstyle.active {
 .navbar-fanstyle .navbar-nav > li > a:hover,
 .navbar-fanstyle .navbar-nav > li > a:focus {
     color: #333;
+    border-bottom: 3px solid #E92322;
     background-color: transparent;
 }
 .navbar-fanstyle .navbar-nav > .active > a,
@@ -232,4 +342,74 @@ fieldset[disabled] .navbar-fanstyle .btn-link:hover,
 .navbar-fanstyle .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-fanstyle .btn-link:focus {
     color: #ccc;
+}
+
+/*自定义tab 选项卡*/
+.nav-tabs-fanstyle {
+    border-bottom: 1px solid #ddd;
+    background-color: #F0F0F0;
+}
+.nav-tabs-fanstyle > li {
+    float: left;
+    margin-bottom: -1px;
+}
+.nav-tabs-fanstyle > li > a {
+    margin-right: 2px;
+    color: #888888;
+    line-height: 1.42857143;
+}
+.nav-tabs-fanstyle > li > a:hover {
+    color: #ddd;
+    background-color: #F0F0F0;
+}
+.nav-tabs-fanstyle > li.active > a,
+.nav-tabs-fanstyle > li.active > a:hover,
+.nav-tabs-fanstyle > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    border-bottom: 3px solid #E92322;
+}
+.nav-tabs-fanstyle.nav-justified {
+    width: 100%;
+    border-bottom: 0;
+}
+.nav-tabs-fanstyle.nav-justified > li {
+    float: none;
+}
+.nav-tabs-fanstyle.nav-justified > li > a {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.nav-tabs-fanstyle.nav-justified > .dropdown .dropdown-menu {
+    top: auto;
+    left: auto;
+}
+@media (min-width: 768px) {
+    .nav-tabs-fanstyle.nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+    .nav-tabs-fanstyle.nav-justified > li > a {
+        margin-bottom: 0;
+    }
+}
+.nav-tabs-fanstyle.nav-justified > li > a {
+    margin-right: 0;
+    border-radius: 4px;
+}
+.nav-tabs-fanstyle.nav-justified > .active > a,
+.nav-tabs-fanstyle.nav-justified > .active > a:hover,
+.nav-tabs-fanstyle.nav-justified > .active > a:focus {
+    border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+    .nav-tabs-fanstyle.nav-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+    .nav-tabs-fanstyle.nav-justified > .active > a,
+    .nav-tabs-fanstyle.nav-justified > .active > a:hover,
+    .nav-tabs-fanstyle.nav-justified > .active > a:focus {
+        border-bottom-color: #fff;
+    }
 }
