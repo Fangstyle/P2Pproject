@@ -118,10 +118,10 @@
 </section>
 <!-- /广告轮播结束 -->
 <!-- 特色介绍开始 -->
-<section id="special">
+<section id="special" class="hidden-xs">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-sm-6 hidden-xs">
+            <div class="col-md-4 col-sm-6">
                 <div class="media">
                     <a class="media-left media-middle" href="#">
                         <i class="icon-uniE907"></i>
@@ -217,6 +217,7 @@
 <section id="products">
     <div class="container">
         <!-- Nav tabs -->
+        <div class="ul-wrap">
         <ul class="nav nav-tabs-fanstyle" role="tablist">
             <li role="presentation" class="active"><a href="#tab_1" role="tab" data-toggle="tab">特别推荐</a></li>
             <li role="presentation"><a href="#tab_2" role="tab" data-toggle="tab">微投资</a></li>
@@ -225,15 +226,15 @@
             <li role="presentation"><a href="#tab_5" role="tab" data-toggle="tab">微增利</a></li>
             <li role="presentation"><a href="#tab_6" role="tab" data-toggle="tab">微金宝</a></li>
             <li role="presentation"><a href="#tab_7" role="tab" data-toggle="tab">微转让</a></li>
-            <li class="pull-right"><a href="#">更多</a></li>
+            <li class="pull-right hidden-xs"><a href="#">更多</a></li>
         </ul>
-
+        </div>
         <!-- Tab panes -->
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="tab_1">
                 <div class="Fanstyle-design-tabItem">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                             <div class="tabItem-right text-center actived">
                                 <div class ="tabItem-right-detail ">
                                     <p><strong>8</strong><sub>%</sub></p>
@@ -262,7 +263,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                             <div class="tabItem-right text-center moved">
                                 <div class ="tabItem-right-detail">
                                     <p><strong>8</strong><sub>%</sub></p>
@@ -291,7 +292,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                             <div class="tabItem-right text-center normaled">
                                 <div class ="tabItem-right-detail">
                                     <p><strong>8</strong><sub>%</sub></p>
@@ -320,7 +321,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                             <div class="tabItem-right text-center normaled">
                                 <div class ="tabItem-right-detail">
                                     <p><strong>8</strong><sub>%</sub></p>
@@ -349,7 +350,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                             <div class="tabItem-right text-center normaled">
                                 <div class ="tabItem-right-detail">
                                     <p><strong>8</strong><sub>%</sub></p>
@@ -378,7 +379,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                             <div class="tabItem-right text-center normaled">
                                 <div class ="tabItem-right-detail">
                                     <p><strong>8</strong><sub>%</sub></p>
@@ -424,10 +425,67 @@
 </section>
 <!-- /产品推荐结束 -->
 <!-- 新闻列表开始-->
-<section></section>
+<section id="news">
+    <div class="row">
+        <div class="col-md-2 col-md-offset-3 news-title"><span class="text-center">4个字的</span></div>
+        <div class="col-md-1">
+
+            <ul class="nav nav-pills nav-stacked" role="tablist">
+                <li role="presentation" class="active"><a href="#news_item1" role="tab" data-toggle="tab" data-title="全部新闻"><i class="icon-news01"></i></a></li>
+                <li role="presentation"><a href="#news_item2" role="tab" data-toggle="tab" data-title="媒体新闻"><i class="icon-news02"></i></a></li>
+                <li role="presentation"><a href="#news_item3" role="tab" data-toggle="tab" data-title="行业资讯"><i class="icon-news03"></i></a></li>
+                <li role="presentation"><a href="#news_item4" role="tab" data-toggle="tab" data-title="快捷资讯"><i class="icon-news04"></i></a></li>
+            </ul>
+
+
+
+        </div>
+        <div class="col-md-5">
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="news_item1">
+                    <p>设置display:block的行内元素能设置宽高</p>
+                    <p>设置浮动的行内元素能设置宽高</p>
+                    <p>设置绝对定位的行内元素能设置宽高</p>
+                    <p>设置固定定位的行内元素能设置宽高</p>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="news_item2">
+                    <p>元素继承父亲的width属性</p>
+                    <p>元素不继承父亲的height属性</p>
+                    <p>浮动元素不继承父亲的width和height属性</p>
+                    <p>绝对定位元素不继承父亲的width和height属性</p>
+                    <p>子类只能继承父类盒子模型中的width，padding和margin属性不继承</p>
+                    <p>子类可以继承父类的字体样式，大小，颜色,行高（字体有关的所有属性）</p>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="news_item3">
+                    <p>line-height只对块级元素起作用</p>
+                    <p></p>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="news_item4">item4</div>
+            </div>
+        </div>
+    </div>
+
+</section>
 <!-- /新闻列表结束 -->
 <!-- 合作伙伴开始-->
-<section></section>
+<section id="parterner" class="visible-lg">
+    <div class="container text-center">
+        <h4>合作伙伴</h4>
+
+    <ul class="center-block">
+        <li><a href="javascript:;"><i class="icon-uniE930"></i></a></li>
+        <li><a href="javascript:;"><i class="icon-uniE92F"></i></a></li>
+        <li><a href="javascript:;"><i class="icon-uniE92E"></i></a></li>
+        <li><a href="javascript:;"><i class="icon-uniE92A"></i></a></li>
+        <li><a href="javascript:;"><i class="icon-uniE929"></i></a></li>
+        <li><a href="javascript:;"><i class="icon-uniE931"></i></a></li>
+        <li><a href="javascript:;"><i class="icon-uniE92C"></i></a></li>
+        <li><a href="javascript:;"><i class="icon-uniE92B"></i></a></li>
+        <li><a href="javascript:;"><i class="icon-uniE92D"></i></a></li>
+    </ul>
+    </div>
+</section>
 <!-- /合作伙伴结束 -->
 <!-- 脚注区域开始 -->
 <footer></footer>

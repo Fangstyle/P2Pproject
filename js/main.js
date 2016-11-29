@@ -2,6 +2,7 @@
  * Created by Administrator on 2016/11/26.
  */
 $(document).ready(function () {
+    var sum =0;
     function reset() {
         var mCurrentWidth = $(window).width();
         var isSmallScreen = mCurrentWidth<768;
@@ -17,9 +18,24 @@ $(document).ready(function () {
             }else{
                 itemdata.html('<img src="' + imgSrc + '" alt="" />');
             }
-
+            setSpecialTab();
         });
 
     }
     $(window).on("resize",reset).trigger('resize');
+    function setSpecialTab() {
+        $( ".nav-tabs-fanstyle > li").each(function (i,item) {
+            sum +=item.clientWidth;
+        });
+        if(($(window).width()) < sum){
+            $(".nav-tabs-fanstyle").css('width', sum);
+            $(".nav-tabs-fanstyle").parent().css('overflow-x', 'scroll');
+        }
+    }
+    $("#news .nav-pills a").on("click",function () {
+         var title =$(this).data("title");
+        $("#news .news-title span").text(title);
+    });
+    $("#news .nav-pills a").first().trigger("click");
+
 });
